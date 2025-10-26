@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.2/animation_utility.css">
+    <link rel="icon" type="image/x-icon" href="image/logo.png">
+    <title>Playwize - FAQs</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header" class="fixed-top bg-accent-transparent">
+        <div class="r-container">
+            <nav class="navbar navbar-expand-xl">
+                <div class="container-fluid ps-3">
+                    <div class="logo-container">
+                        <a class="navbar-brand" href="#"><img src="image/logo.png" alt="" class="img-fluid"></a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars-staggered accent-color-2"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto mb-2 mb-xl-0 gap-xl-4 gap-1">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    About
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                                    <li><a class="dropdown-item" href="team.html">Teacher</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="learning.html">Learning Programs</a></li>
+                                    <li><a class="dropdown-item" href="learning_detail.html">Program Detail</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="activities.html">Activities</a></li>
+                                    <li><a class="dropdown-item" href="activity_detail.html">Activity Detail</a></li>
+                                    <li><a class="dropdown-item" href="pricing_plan.html">Pricing Plan</a></li>
+                                    <li><a class="dropdown-item" href="testimonial.html">Testimonials</a></li>
+                                    <li><a class="dropdown-item active" href="faq.html">FAQs</a></li>
+                                    <li><a class="dropdown-item" href="404.html">404 Error</a></li>
+                                    <li><a class="dropdown-item" href="blog.html">Last Article</a></li>
+                                    <li><a class="dropdown-item" href="single_blog.html">Single Post</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="mb-xl-0 mb-3 w-max-content ps-xl-3" style="justify-self: center;">
+                            <a href="contact.html"
+                                class="btn btn-accent-outline d-flex flex-row rounded-pill gap-2 ps-4 pe-1 py-1 justify-content-between">
+                                <span>Contact Us</span>
+                                <div class="icon-box-2" style="transform: rotate(0deg);">
+                                    <i class="rtmicon rtmicon-classic-phone"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Main -->
+    <main>
+        <!-- Banner -->
+        <div class="section position-relative bg-attach-cover"
+            style="background-image: url(image/BG10.png); padding-bottom: 25rem; padding-top: 5rem;">
+            <div class="r-container">
+                <div class="row row-cols-xl-2 row-cols-1">
+                    <div class="col mb-3 scrollanimation animated zoomIn">
+                        <div class="d-flex flex-column gap-3 justify-content-center h-100">
+                            <h6 class="brush1 accent-color-2 w-max-content">FAQs</h6>
+                            <h1>Find <span class="accent-color fw-bold">Solutions</span> to Your Questions</h1>
+                            <p style="max-width: 600px;">
+                                We're here to help! Browse our comprehensive FAQs or reach out directly to get the
+                                answers you need.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col mb-3 scrollanimation animated pulse">
+                        <img src="image/dummy-img-600x600.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section FAQs -->
+       <!--  <div class="section bg-attach-cover" style="background-image: url(image/BG7.png);">
+            <div class="r-container d-flex flex-column gap-3">
+                <h4 class="brush1 w-max-content">Common Questions</h4>
+                <div class="row row-cols-xl-2 row-cols-1">
+                    <div class="col mb-3">
+                        <div class="accordion d-flex flex-column gap-4" id="faqAccordion1">
+                            <div class="accordion-item-faq">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                        How Can I Track My Child’s Progress?
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion1">
+                                    <div class="accordion-body">
+                                        We provide detailed progress reports and dashboards so you can monitor your
+                                        child’s development and areas for improvement.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item-faq">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                        Are the Lessons and Activities Safe for My Child?
+                                    </button>
+                                </h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1">
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel erat nibh.
+                                        Sed rutrum turpis quis lacinia sollicitudin. Sed ac neque cursus, ornare augue
+                                        pellentesque, elementum turpis.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item-faq">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                        Can I Cancel My Subscription at Any Time?
+                                    </button>
+                                </h2>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1">
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel erat nibh.
+                                        Sed rutrum turpis quis lacinia sollicitudin. Sed ac neque cursus, ornare augue
+                                        pellentesque, elementum turpis.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item-faq">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                                        How Do I Get Started with My Free Trial?
+                                    </button>
+                                </h2>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1">
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel erat nibh.
+                                        Sed rutrum turpis quis lacinia sollicitudin. Sed ac neque cursus, ornare augue
+                                        pellentesque, elementum turpis.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item-faq">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                                        Are There Live Classes or Just Pre-recorded Lessons?
+                                    </button>
+                                </h2>
+                                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1">
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel erat nibh.
+                                        Sed rutrum turpis quis lacinia sollicitudin. Sed ac neque cursus, ornare augue
+                                        pellentesque, elementum turpis.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="accordion d-flex flex-column gap-4" id="faqAccordion2">
+                            <div class="accordion-item-faq">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq6" aria-expanded="true" aria-controls="faq6">
+                                        Can I Switch Between Pricing Plans Mid-Subscription?
+                                    </button>
+                                </h2>
+                                <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel erat nibh.
+                                        Sed rutrum turpis quis lacinia sollicitudin. Sed ac neque cursus, ornare augue
+                                        pellentesque, elementum turpis.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item-faq">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq7" aria-expanded="false" aria-controls="faq7">
+                                        What Types of Subjects Are Covered in Your Program?
+                                    </button>
+                                </h2>
+                                <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel erat nibh.
+                                        Sed rutrum turpis quis lacinia sollicitudin. Sed ac neque cursus, ornare augue
+                                        pellentesque, elementum turpis.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item-faq">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq8" aria-expanded="false" aria-controls="faq8">
+                                        How Often Are New Lessons or Content Added?
+                                    </button>
+                                </h2>
+                                <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel erat nibh.
+                                        Sed rutrum turpis quis lacinia sollicitudin. Sed ac neque cursus, ornare augue
+                                        pellentesque, elementum turpis.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item-faq">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq9" aria-expanded="false" aria-controls="faq9">
+                                        How Do I Reset My Child’s Learning Progress?
+                                    </button>
+                                </h2>
+                                <div id="faq9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel erat nibh.
+                                        Sed rutrum turpis quis lacinia sollicitudin. Sed ac neque cursus, ornare augue
+                                        pellentesque, elementum turpis.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item-faq">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq10" aria-expanded="false" aria-controls="faq10">
+                                        Can My Child Take Breaks Between Lessons?
+                                    </button>
+                                </h2>
+                                <div id="faq10" class="accordion-collapse collapse show"
+                                    data-bs-parent="#faqAccordion2">
+                                    <div class="accordion-body">
+                                        Absolutely! We encourage breaks to keep learning enjoyable and help children
+                                        maintain focus without feeling overwhelmed.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="brush1 w-max-content">Payment Questions</h4>
+                <div class="row row-cols-xl-2 row-cols-1">
+                    <div class="col mb-3">
+                        <div class="accordion d-flex flex-column gap-4" id="faqAccordion3">
+                            <div class="accordion-item-faq">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq11" aria-expanded="true" aria-controls="faq11">
+                                        What are the different types of education fees?
+                                    </button>
+                                </h2>
+                                <div id="faq11" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion3">
+                                    <div class="accordion-body">
+                                        Education fees typically include tuition fees, registration fees, activity fees,
+                                        library fees, lab fees, and exam fees.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item-faq">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq12" aria-expanded="false" aria-controls="faq12">
+                                        How can I pay my child’s school fees?
+                                    </button>
+                                </h2>
+                                <div id="faq12" class="accordion-collapse collapse" data-bs-parent="#faqAccordion3">
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel erat nibh.
+                                        Sed rutrum turpis quis lacinia sollicitudin. Sed ac neque cursus, ornare augue
+                                        pellentesque, elementum turpis.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item-faq">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq13" aria-expanded="false" aria-controls="faq13">
+                                        Can I pay school fees in installments?
+                                    </button>
+                                </h2>
+                                <div id="faq13" class="accordion-collapse collapse" data-bs-parent="#faqAccordion3">
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel erat nibh.
+                                        Sed rutrum turpis quis lacinia sollicitudin. Sed ac neque cursus, ornare augue
+                                        pellentesque, elementum turpis.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item-faq">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq14" aria-expanded="false" aria-controls="faq14">
+                                        What if I can’t afford to pay my child’s school fees?
+                                    </button>
+                                </h2>
+                                <div id="faq14" class="accordion-collapse collapse" data-bs-parent="#faqAccordion3">
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel erat nibh.
+                                        Sed rutrum turpis quis lacinia sollicitudin. Sed ac neque cursus, ornare augue
+                                        pellentesque, elementum turpis.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item-faq">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq15" aria-expanded="false" aria-controls="faq15">
+                                        Are there any discounts for early fee payment?
+                                    </button>
+                                </h2>
+                                <div id="faq15" class="accordion-collapse collapse" data-bs-parent="#faqAccordion3">
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel erat nibh.
+                                        Sed rutrum turpis quis lacinia sollicitudin. Sed ac neque cursus, ornare augue
+                                        pellentesque, elementum turpis.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="accordion d-flex flex-column gap-4" id="faqAccordion4">
+                            <div class="accordion-item-faq">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq16" aria-expanded="true" aria-controls="faq16">
+                                        Do I need to pay fees for extracurricular activities?
+                                    </button>
+                                </h2>
+                                <div id="faq16" class="accordion-collapse collapse" data-bs-parent="#faqAccordion4">
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel erat nibh.
+                                        Sed rutrum turpis quis lacinia sollicitudin. Sed ac neque cursus, ornare augue
+                                        pellentesque, elementum turpis.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item-faq">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq17" aria-expanded="false" aria-controls="faq17">
+                                        What happens if I miss a payment?
+                                    </button>
+                                </h2>
+                                <div id="faq17" class="accordion-collapse collapse" data-bs-parent="#faqAccordion4">
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel erat nibh.
+                                        Sed rutrum turpis quis lacinia sollicitudin. Sed ac neque cursus, ornare augue
+                                        pellentesque, elementum turpis.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item-faq">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq18" aria-expanded="false" aria-controls="faq18">
+                                        Are there registration fees each year?
+                                    </button>
+                                </h2>
+                                <div id="faq18" class="accordion-collapse collapse" data-bs-parent="#faqAccordion4">
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel erat nibh.
+                                        Sed rutrum turpis quis lacinia sollicitudin. Sed ac neque cursus, ornare augue
+                                        pellentesque, elementum turpis.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item-faq">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq19" aria-expanded="false" aria-controls="faq19">
+                                        Are there any tax benefits for paying education fees?
+                                    </button>
+                                </h2>
+                                <div id="faq19" class="accordion-collapse collapse" data-bs-parent="#faqAccordion4">
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel erat nibh.
+                                        Sed rutrum turpis quis lacinia sollicitudin. Sed ac neque cursus, ornare augue
+                                        pellentesque, elementum turpis.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item-faq">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq20" aria-expanded="false" aria-controls="faq20">
+                                        Can I pay for uniforms and books with the school fees?
+                                    </button>
+                                </h2>
+                                <div id="faq20" class="accordion-collapse collapse show"
+                                    data-bs-parent="#faqAccordion4">
+                                    <div class="accordion-body">
+                                        May offer package deals that include uniforms or books, so it’s a good idea to
+                                        ask the school about any bundled options or discounts.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ -->
+        <!-- Section Form -->
+       <!--  <div class="section scrollanimation animated zoomIn" style="padding-top: 20rem;">
+            <div class="r-container position-relative">
+                <div class="bg-accent-color p-5 rounded-5">
+                    <div class="d-flex flex-xl-row flex-column-reverse align-items-center">
+                        <div class="col mb-3">
+                            <div class="floating-form">
+                                <img src="image/dummy-img-600x700.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="d-flex flex-column gap-3">
+                                <h5 class="accent-color-primary">Any Question? Ask Now</h5>
+                                <div class="d-flex flex-column gap-3 justify-content-center w-100">
+                                    <div class="position-relative w-100">
+                                        <div class="success_msg toast align-items-center w-100 shadow-none mb-3 border border-success rounded-pill my-4"
+                                            role="alert" aria-live="assertive" aria-atomic="true">
+                                            <div class="d-flex p-2">
+                                                <div
+                                                    class="toast-body f-18 d-flex flex-row gap-3 align-items-center text-success">
+                                                    <i class="fa-solid fa-check f-36 text-success"></i>
+                                                    Your Message Successfully Send.
+                                                </div>
+                                                <button type="button"
+                                                    class="me-2 m-auto bg-transparent border-0 ps-1 pe-0 text-success"
+                                                    data-bs-dismiss="toast" aria-label="Close"><i
+                                                        class="fa-solid fa-xmark"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="error_msg toast align-items-center w-100 shadow-none border-danger mb-3 my-4 border rounded-pill"
+                                            role="alert" aria-live="assertive" aria-atomic="true">
+                                            <div class="d-flex p-2">
+                                                <div
+                                                    class="toast-body f-18 d-flex flex-row gap-3 align-items-center text-danger">
+                                                    <i class="fa-solid fa-triangle-exclamation f-36 text-danger"></i>
+                                                    Something Wrong ! Send Form Failed.
+                                                </div>
+                                                <button type="button"
+                                                    class="me-2 m-auto bg-transparent border-0 ps-1 pe-0 text-danger"
+                                                    data-bs-dismiss="toast" aria-label="Close"><i
+                                                        class="fa-solid fa-xmark"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="w-100">
+                                            <div class="d-flex flex-column gap-3 p-lg-4">
+                                                <div>
+                                                    <form
+                                                        class="d-flex flex-column h-100 justify-content-center w-100 needs-validation form"
+                                                        novalidate>
+                                                        <div class="mb-3">
+                                                            <input type="text" class="form-control py-3 px-4" name="name"
+                                                                id="name" placeholder="Name" required>
+                                                            <div class="invalid-feedback">
+                                                                The field is required.
+                                                            </div>
+                                                        </div>
+                                                        <div class="row row-cols-xl-2 row-cols-1">
+                                                            <div class="col mb-3">
+                                                                <input type="email" class="form-control py-3 px-4" name="email"
+                                                                    id="email" placeholder="Email" required>
+                                                                <div class="invalid-feedback">
+                                                                    The field is required.
+                                                                </div>
+                                                            </div>
+                                                            <div class="col mb-3">
+                                                                <input type="tel" class="form-control py-3 px-4" name="phone"
+                                                                    id="phone" placeholder="Phone" required>
+                                                                <div class="invalid-feedback">
+                                                                    The field is required.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <input type="text" class="form-control py-3 px-4" name="subject"
+                                                                id="subject" placeholder="Subject" required>
+                                                            <div class="invalid-feedback">
+                                                                The field is required.
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <textarea class="form-control py-3 px-4" name="message" rows="4"
+                                                                id="message" placeholder="Message" required></textarea>
+                                                            <div class="invalid-feedback">
+                                                                The field is required.
+                                                            </div>
+                                                        </div>
+        
+                                                        <button type="submit"
+                                                            class="btn btn-accent submit_form py-3 gap-2 justify-content-center">
+                                                            Send Messages
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+    </main>
+
+    <!-- <!-- <footer>
+        <div class="section py-0 bg-attach-cover position-relative" style="background-image: url(image/Footer.png);">
+            <div class="floating-footer">
+                <img src="image/Graphic.png" class="img-fluid" alt="">
+            </div>
+            <div class="r-container d-flex flex-column gap-5 h-100 justify-content-xl-end">
+                <div class="row row-cols-xl-2 row-cols-1">
+                    <div class="col col-xl-7 mb-3">
+                        <img src="image/logo.png" alt="" class="img-fluid" width="250">
+                    </div>
+                    <div class="col col-xl-5 mb-3">
+                        <h3>Build Confidence And a Love for <span class="accent-color">Learning</span></h3>
+                    </div>
+                </div>
+                <div class="row row-cols-xl-2 row-cols-1">
+                    <div class="col col-xl-7 mb-3">
+                        <div class="row row-cols-xl-2 row-cols-1">
+                            <div class="col mb-3">
+                                <div class="d-flex flex-column">
+                                    <div class="pb-2 w-max-content">
+                                        <h5 class="font-1 accent-color">Quick Link</h5>
+                                        <img src="image/Asset29.png" class="img-fluid w-100" alt="">
+                                    </div>
+                                    <ul class="list ps-0 gap-2 accent-color">
+                                        <li>
+                                            <a href="" class="link d-flex flex-row gap-3 align-items-center">
+                                                Home
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link d-flex flex-row gap-3 align-items-center">
+                                                About Us
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link d-flex flex-row gap-3 align-items-center">
+                                                Services
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link d-flex flex-row gap-3 align-items-center">
+                                                Pricing Plan
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link d-flex flex-row gap-3 align-items-center">
+                                                Contact Us
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link d-flex flex-row gap-3 align-items-center">
+                                                Privacy & Policy
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col mb-3">
+                                <div class="d-flex flex-column gap-3">
+                                    <div class="pb-2 w-max-content">
+                                        <h5 class="font-1 accent-color">Contact Us</h5>
+                                        <img src="image/Asset29.png" class="img-fluid w-100" alt="">
+                                    </div>
+                                    <div class="d-flex flex-column gap-3" style="max-width: 300px;">
+                                        <a href="" class="link d-flex flex-xl-row flex-column gap-3 align-items-center">
+                                            <div class="contact-item">
+                                                <i class="rtmicon rtmicon-location"></i>
+                                            </div>
+                                            KLLG St, No.99, Pku City, ID 28289
+                                        </a>
+                                        <a href="" class="link d-flex flex-xl-row flex-column gap-3 align-items-center">
+                                            <div class="contact-item">
+                                                <i class="rtmicon rtmicon-classic-phone"></i>
+                                            </div>
+                                            0761-8523-398
+                                        </a>
+                                        <a href="" class="link d-flex flex-xl-row flex-column gap-3 align-items-center">
+                                            <div class="contact-item">
+                                                <i class="rtmicon rtmicon-envelope"></i>
+                                            </div>
+                                            hello@domainsite.com
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-5 mb-3">
+                        <div class="overflow-hidden bg-accent-color p-4 rounded-4">
+                            <div class="swiper swiperImage">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide w-100">
+                                        <img src="image/dummy-img-600x400.jpg" class="img-fluid rounded-4" alt="">
+                                    </div>
+                                    <div class="swiper-slide w-100">
+                                        <img src="image/dummy-img-600x400.jpg" class="img-fluid rounded-4" alt="">
+                                    </div>
+                                    <div class="swiper-slide w-100">
+                                        <img src="image/dummy-img-600x400.jpg" class="img-fluid rounded-4" alt="">
+                                    </div>
+                                </div> -->
+                                <!-- If we need pagination -->
+                               <!--  <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column gap-xl-0 gap-3">
+                    <div class="d-flex flex-row gap-3 align-items-center">
+                        <div class="social-container gap-3">
+                            <a href="https://www.facebook.com" class="social-item-2">
+                                <i class="fa-brands fa-xs fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com" class="social-item-2">
+                                <i class="fa-brands fa-xs fa-instagram"></i>
+                            </a>
+                            <a href="https://www.twitter.com" class="social-item-2">
+                                <i class="fa-brands fa-xs fa-twitter"></i>
+                            </a>
+                            <a href="https://www.youtube.com" class="social-item-2">
+                                <i class="fa-brands fa-xs fa-youtube"></i>
+                            </a>
+                        </div>
+                        <div class="border-top border-accent-2 w-100"></div>
+                    </div>
+                    <div class="d-flex flex-xl-row flex-column gap-3 justify-content-center pb-3">
+                        <span class="text-xl-center accent-color text-center fs-6 font-3">
+                            Copyright © 2025 Rometheme. All Rights Reserved.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+
+    <!-- Scripts -->
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/vendor/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/swiper-script.js"></script>
+    <script src="js/submit-form.js"></script>
+    <script src="js/vendor/isotope.pkgd.min.js"></script>
+    <script src="js/video_embedded.js"></script>
+    <script src="js/vendor/fslightbox.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.0/oyethemes_onscroll_animation.js"></script>
+</body>
+
+</html>

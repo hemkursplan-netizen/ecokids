@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.2/animation_utility.css">
+    <link rel="icon" type="image/x-icon" href="image/logo.png">
+    <title>Gallery</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header" class="fixed-top bg-accent-transparent">
+      <div class="r-container">
+        <nav class="navbar navbar-expand-xl">
+          <div class="container-fluid ps-3">
+            <div class="logo-container">
+              <a class="navbar-brand" href="#">
+                <img
+                  src="image/logo.png"
+                  alt="Logo 1"
+                  class="img-fluid logo--primary"
+                  style="height: 144px; width: auto"
+                />
+                <img
+                  src="image/logo7.jpg"
+                  alt="Logo 2"
+                  class="img-fluid logo--secondary"
+                  style="height: 70px; width: auto; margin-left: 12px"
+                />
+              </a>
+            </div>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              
+            >
+              <i class="fa-solid fa-bars-staggered accent-color-2"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto mb-2 mb-xl-0 gap-xl-4 gap-1">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    style="font-size: 15px; padding: 6px 10px; line-height: 1.2"
+                  >
+                    About
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="about.html">About Project</a>
+                    </li>
+                   <!--  <li>
+                      <a class="dropdown-item" href="team.html">Teacher</a>
+                    </li> -->
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    style="font-size: 15px; padding: 6px 10px; line-height: 1.2"
+                  >
+                    Dissemination
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="https://www.facebook.com/share/1AA9yiW23c/"
+                        >Facebook</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="https://school-education.ec.europa.eu/en/etwinning/projects/nature-interactive-learning"
+                        >E-Twinning</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    style="font-size: 15px; padding: 6px 10px; line-height: 1.2"
+
+                  >
+                    Pages
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="activities.html"
+                        >Activities</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="activity_detail.html"
+                        >Gallery</a
+                      >
+                    </li>
+                    <!-- <li>
+                      <a class="dropdown-item" href="pricing_plan.html"
+                        >Pricing Plan</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="testimonial.html"
+                        >Testimonials</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="faq.html">FAQs</a></li>
+                    <li>
+                      <a class="dropdown-item" href="404.html">404 Error</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="blog.html">Last Article</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="single_blog.html"
+                        >Single Post</a
+                      >
+                    </li> -->
+                  </ul>
+                </li>
+              </ul>
+              <div
+                class="mb-xl-0 mb-3 w-max-content ps-xl-3"
+                style="justify-self: center"
+              >
+                <a
+                  href="contact.html"
+                  class="btn btn-accent-outline d-flex flex-row rounded-pill gap-2 ps-4 pe-1 py-1 justify-content-between"
+                >
+                  <span style="font-size: 15px">Contact Us</span>
+                  <div
+                    class="icon-box-2"
+                    style="
+                      transform: rotate(0);
+                      width: 34px;
+                      height: 34px;
+                      padding: 6px;
+                      font-size: 16px;
+                    "
+                  >
+                    <i
+                      class="rtmicon rtmicon-classic-phone"
+                      style="font-size: 16px"
+                    ></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <main>
+        <!-- Banner -->
+        <div class="section position-relative bg-attach-cover"
+     style="background-image:url(image/BG12.png); padding-top:18rem; padding-bottom:25rem;">
+
+            <div class="r-container">
+                <div class="row justify-content-center"> 
+                    <div class="col mb-3 scrollanimation animated zoomIn">
+                        <div class="d-flex flex-column gap-3 justify-content-center h-100">
+                            <h6 class="brush1 accent-color-2 w-max-content">Gallery</h6>
+                            <h1>Our <span class="accent-color fw-bold">Educational Activities</span> In Nature</h1>
+                            <p style="max-width: 600px;">
+                                We are dedicated to fostering a love for learning in every child. Through engaging
+                                activities, personalized attention, and a supportive environment in Nature
+                            </p>
+                        </div>
+                    </div>
+                    <!-- <div class="col mb-3 scrollanimation animated pulse">
+                        <img src="image/dummy-img-600x600.jpg" class="img-fluid" alt="">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Activities -->
+       <!--  <div class="section bg-attach-cover" style="background-image: url(image/BG12.png);">
+            <div class="r-container d-flex flex-column gap-3">
+                <div class="d-flex flex-column gap-3 align-items-center justify-content-center mx-auto text-center scrollanimation animated zoomIn"
+                    style="max-width: 700px;">
+                    <h6 class="brush1 accent-color-2" style="width: max-content;">Inspire Creativity</h6>
+                    <h3>Engage Your Child with <span class="accent-color fw-bold">Fun Activities</span></h3>
+                    <p style="max-width: 600px;">
+                        Discover a wide range of interacative and exciting activities designed to keep your child engaged while enhancing their learning.
+                    </p>
+                </div>
+                <div class="row row-cols-xl-3 row-cols-1">
+                    <div class="col mb-3">
+                        <div class="bg-accent-color-6 rounded-4 position-relative" style="z-index: 2;">
+                            <div
+                                class="card activities-container accent justify-content-center align-items-center">
+                                <div class="d-flex flex-column gap-3">
+                                    <h5 class="m-0">Learning Astronomy</h5>
+                                    <p class="m-0">
+                                        By learning about constellations, the solar system, and space
+                                        missions, kids can discover how everything in the sky works.
+                                    </p>
+                                    <a href="activity_detail.html" class="font-1 fs-5 read-more">Learn More
+                                        <i class="rtmicon rtmicon rtmicon-arrow-right fw-bold fs-6"></i></a>
+                                    <img src="image/Learning_Astronomy.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="bg-accent-color-3 rounded-4 position-relative" style="z-index: 2;">
+                            <div
+                                class="card activities-container accent2 justify-content-center align-items-center">
+                                <div class="d-flex flex-column gap-3">
+                                    <h5 class="m-0">Museum Visit</h5>
+                                    <p class="m-0">
+                                        Exploring different exhibits helps children develop critical
+                                        thinking, and a deeper understanding of the world around them.
+                                    </p>
+                                    <a href="activity_detail.html" class="font-1 fs-5 read-more">Learn More
+                                        <i class="rtmicon rtmicon rtmicon-arrow-right fw-bold fs-6"></i></a>
+                                    <img src="image/Museum_Visit.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="bg-accent-color-2 rounded-4 position-relative" style="z-index: 2;">
+                            <div
+                                class="card activities-container accent3 justify-content-center align-items-center">
+                                <div class="d-flex flex-column gap-3">
+                                    <h5 class="m-0">Camping & Singing</h5>
+                                    <p class="m-0">
+                                        These activities promote physical activity, communication, and
+                                        problem-solving, making them a perfect combination.
+                                    </p>
+                                    <a href="activity_detail.html" class="font-1 fs-5 read-more">Learn More
+                                        <i class="rtmicon rtmicon rtmicon-arrow-right fw-bold fs-6"></i></a>
+                                    <img src="image/Camping_and_Singing.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="bg-accent-color-9 rounded-4 position-relative" style="z-index: 2;">
+                            <div
+                                class="card activities-container accent4 justify-content-center align-items-center">
+                                <div class="d-flex flex-column gap-3">
+                                    <h5 class="m-0">Exploring Nature</h5>
+                                    <p class="m-0">
+                                        By learning about constellations, the solar system, and space
+                                        missions, kids can discover how everything in the sky works.
+                                    </p>
+                                    <a href="activity_detail.html" class="font-1 fs-5 read-more">Learn More
+                                        <i class="rtmicon rtmicon rtmicon-arrow-right fw-bold fs-6"></i></a>
+                                    <img src="image/Exploring_Nature.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="bg-accent-color-8 rounded-4 position-relative" style="z-index: 2;">
+                            <div
+                                class="card activities-container accent5 justify-content-center align-items-center">
+                                <div class="d-flex flex-column gap-3">
+                                    <h5 class="m-0">Playing Building Blocks</h5>
+                                    <p class="m-0">
+                                        By learning about constellations, the solar system, and space
+                                        missions, kids can discover how everything in the sky works.
+                                    </p>
+                                    <a href="activity_detail.html" class="font-1 fs-5 read-more">Learn More
+                                        <i class="rtmicon rtmicon rtmicon-arrow-right fw-bold fs-6"></i></a>
+                                    <img src="image/Playing_Building_Blocks.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="bg-accent-color-11 rounded-4 position-relative" style="z-index: 2;">
+                            <div
+                                class="card activities-container accent6 justify-content-center align-items-center">
+                                <div class="d-flex flex-column gap-3">
+                                    <h5 class="m-0">Rock Climbing</h5>
+                                    <p class="m-0">
+                                        By learning about constellations, the solar system, and space
+                                        missions, kids can discover how everything in the sky works.
+                                    </p>
+                                    <a href="activity_detail.html" class="font-1 fs-5 read-more">Learn More
+                                        <i class="rtmicon rtmicon rtmicon-arrow-right fw-bold fs-6"></i></a>
+                                    <img src="image/Graphic.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Section CTA -->
+       <!--  <div class="section  scrollanimation animated zoomIn">
+            <div class="r-container">
+                <div class="bg-accent-color p-5 rounded-5">
+                    <div class="row row-cols-xl-2 row-cols-1 align-items-center">
+                        <div class="col mb-xl-0 mb-3">
+                            <img src="image/dummy-img-600x400.jpg" class="img-fluid rounded-5" alt="">
+                        </div>
+                        <div class="col mb-xl-0 mb-3">
+                            <div class="d-flex flex-column gap-3">
+                                <h3 class="accent-color-primary">Discover Fun and Engaging <span
+                                        class="accent-color-2 fw-bold">Learning</span> for Kids</h3>
+                                <p class="accent-color-primary">Our programs offer a dynamic blend of interactive
+                                    activities, creative exercises, and
+                                    educational games that make learning exciting and enjoyable.</p>
+                                <div class="d-flex flex-xl-row flex-column gap-4">
+                                    <div class="w-max-content">
+                                        <a href="contact.html"
+                                            class="btn btn-accent-outline-white d-flex flex-row rounded-pill gap-2 ps-4 pe-1 py-1 justify-content-between">
+                                            <span>Learn More</span>
+                                            <div class="icon-box-3" style="transform: rotate(0deg);">
+                                                <i class="rtmicon rtmicon-classic-phone"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="d-flex flex-column gap-1">
+                                        <div class=" d-flex flex-row customer-container">
+                                            <div class="customer-item">
+                                                <img src="image/dummy-img-400x400.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="customer-item">
+                                                <img src="image/dummy-img-400x400.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="customer-item">
+                                                <img src="image/dummy-img-400x400.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="customer-item bg-accent-primary border-0">
+                                                <span class="text-center small-text accent-color">1k+</span>
+                                            </div>
+                                        </div>
+                                        <span class="testimonial-name accent-color-primary">Happy Kids</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ -->
+        <!-- Section Testimonials -->
+       <!--  <div class="section bg-attach-cover" style="background-image: url(image/BG13.png);">
+            <div class="r-container">
+                <div class="row row-cols-xl-2 row-cols-1">
+                    <div class="col col-xl-5 mb-3 scrollanimation animated fadeInLeft">
+                        <div class="d-flex flex-column gap-3" style="max-width: 700px;">
+                            <h6 class="brush1 accent-color-2" style="width: max-content;">Testimonials</h6>
+                            <h3>What Parents <span class="accent-color fw-bold">Says</span> About Our Program</h3>
+                            <p style="max-width: 600px;">
+                                Our learning environment is designed to inspire curiosity and creativity, fostering a
+                                love for
+                                exploration while supporting every child’s.
+                            </p>
+                            <div class="w-max-content">
+                                <a href="testimonial.html"
+                                    class="btn btn-accent-outline d-flex flex-row rounded-pill gap-2 ps-4 pe-1 py-1 justify-content-between">
+                                    <span>View All</span>
+                                    <div class="icon-box-2">
+                                        <i class="rtmicon rtmicon-arrow-up-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-7 scrollanimation animated fadeInRight">
+                        <div class="service-scroll d-flex flex-column gap-4">
+                            <div class="testimonial-container card">
+                                <div class="d-flex flex-column gap-3">
+                                    <div class="flex-row">
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: var(--text-color-1);"></i>
+                                    </div>
+                                    <span class="testimonial-text">"Exceptional service and care! The
+                                        pharmacists here always go above and beyond to make sure I
+                                        understand my medications and provide valuable advice. They
+                                        truly care about my health."</span>
+                                </div>
+                                <div class="d-flex flex-row gap-2 justify-content-between">
+                                    <div class="d-flex flex-row gap-3 align-items-center">
+                                        <div class="customer-item testimonial">
+                                            <img src="image/dummy-img-400x400.jpg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <span class="testimonial-name">Gracia Agnez</span>
+                                            <p class="m-0">Parents</p>
+                                        </div>
+                                    </div>
+                                    <i class="rtmicon rtmicon-blockquote accent-color-3" style="font-size: 82px;"></i>
+                                </div>
+                            </div>
+                            <div class="testimonial-container card">
+                                <div class="d-flex flex-column gap-3">
+                                    <div class="flex-row">
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: var(--text-color-1);"></i>
+                                    </div>
+                                    <span class="testimonial-text">“I’ve always struggled with finding resources that
+                                        keep my child engaged outside of school, but this program is different. I’ve
+                                        seen improvements in everything from reading skills to critical
+                                        thinking."</span>
+                                </div>
+                                <div class="d-flex flex-row gap-2 justify-content-between">
+                                    <div class="d-flex flex-row gap-3 align-items-center">
+                                        <div class="customer-item testimonial">
+                                            <img src="image/dummy-img-400x400.jpg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <span class="testimonial-name">Michelle Karen</span>
+                                            <p class="m-0">Parents</p>
+                                        </div>
+                                    </div>
+                                    <i class="rtmicon rtmicon-blockquote accent-color-3" style="font-size: 82px;"></i>
+                                </div>
+                            </div>
+                            <div class="testimonial-container card">
+                                <div class="d-flex flex-column gap-3">
+                                    <div class="flex-row">
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: var(--text-color-1);"></i>
+                                    </div>
+                                    <span class="testimonial-text">"The progress my son has made using this platform has
+                                        been incredible. He no longer feels stressed about learning new material, and
+                                        he’s tackling challenges with a positive attitude.”</span>
+                                </div>
+                                <div class="d-flex flex-row gap-2 justify-content-between">
+                                    <div class="d-flex flex-row gap-3 align-items-center">
+                                        <div class="customer-item testimonial">
+                                            <img src="image/dummy-img-400x400.jpg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <span class="testimonial-name">Emily Laura</span>
+                                            <p class="m-0">Parents</p>
+                                        </div>
+                                    </div>
+                                    <i class="rtmicon rtmicon-blockquote accent-color-3" style="font-size: 82px;"></i>
+                                </div>
+                            </div>
+                            <div class="testimonial-container card">
+                                <div class="d-flex flex-column gap-3">
+                                    <div class="flex-row">
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: var(--text-color-1);"></i>
+                                    </div>
+                                    <span class="testimonial-text">"Exceptional service and care! The
+                                        pharmacists here always go above and beyond to make sure I
+                                        understand my medications and provide valuable advice. They
+                                        truly care about my health."</span>
+                                </div>
+                                <div class="d-flex flex-row gap-2 justify-content-between">
+                                    <div class="d-flex flex-row gap-3 align-items-center">
+                                        <div class="customer-item testimonial">
+                                            <img src="image/dummy-img-400x400.jpg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <span class="testimonial-name">Gracia Agnez</span>
+                                            <p class="m-0">Parents</p>
+                                        </div>
+                                    </div>
+                                    <i class="rtmicon rtmicon-blockquote accent-color-3" style="font-size: 82px;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="section py-0 bg-attach-cover position-relative" style="background-image: url(image/Footer.png);">
+            <div class="floating-footer">
+                <img src="image/Graphic.png" class="img-fluid" alt="">
+            </div>
+            <div class="r-container d-flex flex-column gap-5 h-100 justify-content-xl-end">
+                <div class="row row-cols-xl-2 row-cols-1">
+                    <div class="col col-xl-7 mb-3">
+                        <img src="image/logo.png" alt="" class="img-fluid" width="250">
+                    </div>
+                    <div class="col col-xl-5 mb-3">
+                        <h3>Build Confidence And a Love for <span class="accent-color">Learning</span></h3>
+                    </div>
+                </div>
+                <div class="row row-cols-xl-2 row-cols-1">
+                    <div class="col col-xl-7 mb-3">
+                        <div class="row row-cols-xl-2 row-cols-1">
+                            <div class="col mb-3">
+                                <div class="d-flex flex-column">
+                                    <div class="pb-2 w-max-content">
+                                        <h5 class="font-1 accent-color">Quick Link</h5>
+                                        <img src="image/Asset29.png" class="img-fluid w-100" alt="">
+                                    </div>
+                                    <ul class="list ps-0 gap-2 accent-color">
+                                        <li>
+                                            <a href="" class="link d-flex flex-row gap-3 align-items-center">
+                                                Home
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link d-flex flex-row gap-3 align-items-center">
+                                                About Us
+                                            </a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    style="font-size: 15px; padding: 6px 10px; line-height: 1.2"
+                  >
+                    Dissemination
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="https://www.facebook.com/share/1AA9yiW23c/"
+                        >Facebook</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="https://school-education.ec.europa.eu/en/etwinning/projects/nature-interactive-learning"
+                        >E-Twinning</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    style="font-size: 15px; padding: 6px 10px; line-height: 1.2"
+
+                  >
+                    Pages
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="activities.html"
+                        >Activities</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="activity_detail.html"
+                        >Activity Detail</a
+                      >
+                    </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col mb-3">
+                                <div class="d-flex flex-column gap-3">
+                                    <div class="pb-2 w-max-content">
+                                        <h5 class="font-1 accent-color">Contact Us</h5>
+                                        <img src="image/Asset29.png" class="img-fluid w-100" alt="">
+                                    </div>
+                                    <div class="d-flex flex-column gap-3" style="max-width: 300px;">
+                                        <a href="" class="link d-flex flex-xl-row flex-column gap-3 align-items-center">
+                                            <div class="contact-item">
+                                                <i class="rtmicon rtmicon-location"></i>
+                                            </div>
+                                            KLLG St, No.99, Pku City, ID 28289
+                                        </a>
+                                        <a href="" class="link d-flex flex-xl-row flex-column gap-3 align-items-center">
+                                            <div class="contact-item">
+                                                <i class="rtmicon rtmicon-classic-phone"></i>
+                                            </div>
+                                            0761-8523-398
+                                        </a>
+                                        <a href="" class="link d-flex flex-xl-row flex-column gap-3 align-items-center">
+                                            <div class="contact-item">
+                                                <i class="rtmicon rtmicon-envelope"></i>
+                                            </div>
+                                            hello@domainsite.com
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-5 mb-3">
+                        <div class="overflow-hidden bg-accent-color p-4 rounded-4">
+                            <div class="swiper swiperImage">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide w-100">
+                                        <img src="image/dummy-img-600x400.jpg" class="img-fluid rounded-4" alt="">
+                                    </div>
+                                    <div class="swiper-slide w-100">
+                                        <img src="image/dummy-img-600x400.jpg" class="img-fluid rounded-4" alt="">
+                                    </div>
+                                    <div class="swiper-slide w-100">
+                                        <img src="image/dummy-img-600x400.jpg" class="img-fluid rounded-4" alt="">
+                                    </div>
+                                </div> -->
+                                <!-- If we need pagination -->
+                               <!--  <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column gap-xl-0 gap-3">
+                    <div class="d-flex flex-row gap-3 align-items-center">
+                        <div class="social-container gap-3">
+                            <a href="https://www.facebook.com" class="social-item-2">
+                                <i class="fa-brands fa-xs fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com" class="social-item-2">
+                                <i class="fa-brands fa-xs fa-instagram"></i>
+                            </a>
+                            <a href="https://www.twitter.com" class="social-item-2">
+                                <i class="fa-brands fa-xs fa-twitter"></i>
+                            </a>
+                            <a href="https://www.youtube.com" class="social-item-2">
+                                <i class="fa-brands fa-xs fa-youtube"></i>
+                            </a>
+                        </div>
+                        <div class="border-top border-accent-2 w-100"></div>
+                    </div>
+                    <div class="d-flex flex-xl-row flex-column gap-3 justify-content-center pb-3">
+                        <span class="text-xl-center accent-color text-center fs-6 font-3">
+                            Copyright © 2025 Rometheme. All Rights Reserved.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+
+    <!-- Scripts -->
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/vendor/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/swiper-script.js"></script>
+    <script src="js/submit-form.js"></script>
+    <script src="js/vendor/isotope.pkgd.min.js"></script>
+    <script src="js/video_embedded.js"></script>
+    <script src="js/vendor/fslightbox.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.0/oyethemes_onscroll_animation.js"></script>
+</body>
+
+</html>
