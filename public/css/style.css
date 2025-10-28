@@ -25,7 +25,7 @@
 /* ---------------------------- */
 /* Import Statements            */
 /* ---------------------------- */
-@import url('../css/vendor/');
+
 @import url('../css/vendor/bootstrap.min.css');
 @import url('../css/vendor/fontawesome.css');
 @import url('../css/vendor/brands.css');
@@ -107,6 +107,10 @@
     --font-1: "Poppins", sans-serif;
     --font-2: "Bubblegum Sans", sans-serif;
     --font-3: "Inter", sans-serif;
+    --accent-color:  #9D90FF;   /* daha açık mor */
+  /* Mor arka planları da yumuşat */
+  --accent-color-3:#E8E3FF;   /* kart/şerit açık mor */
+  --accent-color-4:#F9F7FF;   /* çok açık mor (neredeyse kırık beyaz) */
 
 }
 
@@ -3965,6 +3969,86 @@ a:hover .icon-box-2 {
   margin: 0; padding: 0;
 }
 .footer-list li{ list-style: none; margin: .35rem 0; }
+/* Testimonial Container */
+.testimonial-container {
+  height: auto;
+  min-height: 250px;
+  padding: 40px;
+  border-radius: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+@media (max-width: 576px) {
+  .testimonial-container {
+    padding: 15px;
+    min-height: 200px;
+    border-radius: 15px;
+  }
+}
+
+/* Profil Resimleri */
+.customer-item.testimonial {
+  width: 5rem;
+  height: 5rem;
+}
+
+@media (max-width: 576px) {
+  .customer-item.testimonial {
+    width: 40px;
+    height: 40px;
+  }
+
+  .customer-item.testimonial img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Service Scroll */
+.service-scroll {
+  padding: 1rem;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+@media (max-width: 576px) {
+  .service-scroll {
+    padding: 0.5rem;
+    max-height: 400px;
+  }
+}
+
+/* İkon Boyutu */
+@media (max-width: 576px) {
+  .rtmicon-blockquote {
+    font-size: 40px;
+  }
+}
+
+/* Sütun Düzeni */
+@media (max-width: 576px) {
+  .col,
+  .col-xl-5,
+  .col-xl-7 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* Flex Hizalama */
+.testimonial-container .d-flex {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 576px) {
+  .testimonial-container .d-flex.flex-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
 
 /* === Mobil düzeltmeleri (≤576px) === */
 @media (max-width: 576px) {
@@ -4017,6 +4101,15 @@ a:hover .icon-box-2 {
     padding: 6px !important;
     font-size: 14px !important;
   }
+  .nav-link--compact{
+  font-size:15px;
+  padding:6px 10px;
+  line-height:1.2;
+  border-radius:20px;
+}
+/* aktif “pill” çok dolgun görünüyorsa */
+.nav-link--compact.active{ padding:6px 10px; }
+
   
 }
 
@@ -4520,6 +4613,41 @@ a:hover .icon-box-2 {
         padding-left: 0;
         padding-block: 0;
     }
+/* === KRİTİK FİX #1: Footer yükseklik ezme === */
+footer{
+  height: auto !important;
+  position: relative; /* bindirme riskini azaltır */
+  z-index: 0;
+}
+
+/* === KRİTİK FİX #2: Accordion genişliklerini mobilde kır === */
+@media (max-width: 576px){
+  /* Satırları güvenli kır: */
+  .row > [class*="col"]{
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  /* Accordion container ve item’lar tek sütun + taşma yok */
+  .accordion-container{
+    display: block !important;
+    overflow: hidden !important;
+  }
+  .accordion-item{
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    flex: 0 0 100% !important;
+  }
+  .accordion-item .team-img img{
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Yatay scroll’u kapat */
+  html, body{ overflow-x: hidden !important; }
+}
 
  
 
